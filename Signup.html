@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellytics - Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+    <div class="auth-container">
+        <h1 style="text-align: center;">Join Diesel Dump</h1>
+        <div class="form-body">
+            <input type="text" id="fullname" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <input type="password" id="password" placeholder="Create Password">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <textarea id="address" placeholder="Physical Address"
+                style="width: 100%; padding: 14px 20px; margin-bottom: 16px; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; font-family: inherit; resize: vertical;"></textarea>
+
+            <label
+                style="display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-muted); font-size: 0.875rem;">Select
+                Your Role</label>
+            <select id="role"
+                style="width: 100%; padding: 14px 20px; margin-bottom: 24px; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; background: white;">
+                <option value="buyers">Buyer</option>
+                <option value="supplier">Supplier</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button id="registerBtn">Create Account</button>
+            <p style="text-align: center; margin-top: 20px;">Already have an account? <a href="login.html">Login
+                    here</a></p>
+            <p id="msg" class="message"></p>
+        </div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
